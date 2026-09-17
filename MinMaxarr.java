@@ -1,0 +1,21 @@
+import java.util.*;
+class MinMaxarr{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter array size:");
+int n=sc.nextInt();
+int[] a=new int[n];
+System.out.println("Enter the array elements:");
+for(int i=0;i<n;i++){
+a[i]=sc.nextInt();
+}
+System.out.println("Array elements are:");
+for(int i=0;i<n;i++){
+System.out.println(a[i]+" ");}
+Arrays.sort(a);
+System.out.println("Sorted Array is:");
+for(int i=0;i<n;i++){
+System.out.println(a[i]);}
+System.out.println("Minimum:"+a[0]);
+System.out.println("Maximum:"+a[n-1]);
+}}
